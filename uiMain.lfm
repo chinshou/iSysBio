@@ -1,0 +1,116 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 320
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+  object PaintBox1: TPaintBox
+    Position.Point = '(0,24)'
+    Width = 321.000000000000000000
+    Height = 337.000000000000000000
+    OnDblClick = PaintBox1DblClick
+    OnMouseDown = PaintBox1MouseDown
+    OnMouseMove = PaintBox1MouseMove
+    OnMouseUp = PaintBox1MouseUp
+    OnPaint = PaintBox1Paint
+    object CalloutPanel1: TCalloutPanel
+      Position.Point = '(88,120)'
+      Width = 192.000000000000000000
+      Height = 153.000000000000000000
+      TabOrder = 0
+      CalloutWidth = 23.000000000000000000
+      CalloutLength = 11.000000000000000000
+      object ClearingEdit1: TClearingEdit
+        Position.Point = '(56,48)'
+        Width = 129.000000000000000000
+        Height = 22.000000000000000000
+        TabOrder = 0
+        KeyboardType = vktDefault
+        OnChange = ClearingEdit1Change
+        Password = False
+      end
+      object Label2: TLabel
+        Position.Point = '(0,16)'
+        Width = 193.000000000000000000
+        Height = 33.000000000000000000
+        TabOrder = 1
+        Font.Size = 20.000000000000000000
+        Font.Style = [fsBold]
+        TextAlign = taCenter
+        Text = 'Label2'
+      end
+      object Label3: TLabel
+        Position.Point = '(8,40)'
+        Width = 65.000000000000000000
+        Height = 33.000000000000000000
+        TabOrder = 2
+        Font.Style = [fsBold]
+        Text = 'Name'
+      end
+      object Label4: TLabel
+        Position.Point = '(8,80)'
+        Width = 49.000000000000000000
+        Height = 15.000000000000000000
+        TabOrder = 3
+        Font.Style = [fsBold]
+        Text = 'Value'
+      end
+      object ComboTrackBar1: TComboTrackBar
+        Position.Point = '(56,80)'
+        Width = 129.000000000000000000
+        Height = 22.000000000000000000
+        TabOrder = 5
+        KeyboardType = vktDefault
+        OnChange = ComboTrackBar1Change
+        Max = 100.000000000000000000
+        Text = '0.000'
+      end
+    end
+  end
+  object Button1: TButton
+    Position.Point = '(8,432)'
+    Width = 89.000000000000000000
+    Height = 33.000000000000000000
+    OnClick = Button1Click
+    StyleLookup = 'Button1Style1'
+    TabOrder = 1
+    Text = 'Add Node'
+  end
+  object Button2: TButton
+    Position.Point = '(112,432)'
+    Width = 89.000000000000000000
+    Height = 33.000000000000000000
+    OnClick = Button2Click
+    TabOrder = 2
+    Text = 'Add Edge'
+  end
+  object Button3: TButton
+    Position.Point = '(216,432)'
+    Width = 89.000000000000000000
+    Height = 33.000000000000000000
+    OnClick = Button3Click
+    TabOrder = 3
+    Text = 'Clear'
+  end
+  object Memo1: TMemo
+    Position.Point = '(8,368)'
+    Width = 297.000000000000000000
+    Height = 57.000000000000000000
+    TabOrder = 4
+    KeyboardType = vktDefault
+  end
+  object Label1: TLabel
+    Align = alTop
+    Width = 320.000000000000000000
+    Height = 23.000000000000000000
+    TabOrder = 5
+    Font.Family = 'Verdana'
+    Font.Size = 14.000000000000000000
+    Font.Style = [fsBold]
+    TextAlign = taCenter
+    Text = 'iSysBio'
+  end
+end
