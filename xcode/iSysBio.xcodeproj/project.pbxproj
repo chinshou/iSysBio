@@ -97,7 +97,7 @@
 		0A52AE8310F0D05300478C4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 0A52AE8610F0D05300478C4F /* Build configuration list for PBXProject "iSysBio" */;
 			compatibilityVersion = "Xcode 3.2";
